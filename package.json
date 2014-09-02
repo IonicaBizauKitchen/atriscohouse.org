@@ -1,0 +1,35 @@
+{
+  "name": "atriscohouse.org",
+  "version": "1.0.0",
+  "description": "A website to sell the house I bought in Albuquerque years ago.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "harp server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zeke/atriscohouse.org"
+  },
+  "keywords": [
+    "zeke",
+    "house",
+    "website",
+    "personal"
+  ],
+  "author": "Zeke Sikelianos <zeke@sikelianos.com> (http://zeke.sikelianos.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zeke/atriscohouse.org/issues"
+  },
+  "homepage": "https://github.com/zeke/atriscohouse.org",
+  "dependencies": {
+    "async": "^0.9.0",
+    "dotenv": "^0.2.8",
+    "flickr-client": "0.0.3",
+    "flickr-photo-info": "0.0.0",
+    "harp": "^0.13.0",
+    "superagent": "^0.18.2"
+  }
+
+}
