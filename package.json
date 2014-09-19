@@ -1,10 +1,10 @@
 {
   "name": "atriscohouse.org",
   "version": "1.0.0",
-  "description": "A website to sell the house I bought in Albuquerque years ago.",
+  "description": "A website to sell my house in Albuquerque",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "flickr": "node flickr.js",
     "start": "harp server"
   },
   "repository": {
@@ -31,5 +31,4 @@
     "harp": "^0.13.0",
     "superagent": "^0.18.2"
   }
-
 }

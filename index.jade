@@ -1,12 +1,12 @@
 html
   head
     title 1523 Atrisco Drive SW, Albuquerque NM, 87105
-    link(href="//fonts.googleapis.com/css?family=Droid+Serif:400,700|Kreon|Bitter|Vollkorn", rel="stylesheet", type="text/css")
+    link(href="//fonts.googleapis.com/css?family=Droid+Serif:400,700|Alegreya+SC:400,700", rel="stylesheet", type="text/css")
     link(href="/styles.css", rel="stylesheet", type="text/css")
     meta(name="viewport" content="width=device-width, initial-scale=1")
   body
-    section
 
+    #splash(style="background-image:url('" + public._data[0].urls.large + "')")
       hgroup
         h2 For Sale by Owner
         h1
@@ -15,8 +15,7 @@ html
           //- em in Albuquerque, New Mexico
           em $250,000
 
-
-      img(src=public._data[0].urls.medium640 alt=public._data[0].title)
+    section
 
       h3 The House
 
@@ -34,21 +33,20 @@ html
 
       :markdown
 
-        The house is very private, with an enclosed front yard. A newly-built adobe wall runs along the street, providing protection and insulation from traffic.
+        The property is very private, with a front yard enclosed by a newly-built adobe wall, providing protection and insulation from traffic on Atrisco.
 
         With an enclosed 2.1-acre lot, the property is perfect for pets or farm animals. During the time that I lived here, it was home to donkeys, goats, pigs, dogs, cats, chickens, and geese.
 
         There are several large cottonwood, elm, and mulberry trees on the property.
 
-        The house itself has city water, but there's also a working well with a newly-installed pump for outdoor use such as gardening.
+        The house itself is on city water, but there's also a well with a new electric pump for outdoor irrigation.
 
       h3 The Location
 
       :markdown
-        The Atrisco house is remote enough that your neighbors have a cow, but it's only 4 miles from downtown Albuquerque, and five miles from the University. There's also a bus line that runs on Atrisco, and a bus stop right outside the house.
+        The Atrisco house is remote enough that your neighbors have a cow, but it's only 4 miles from downtown Albuquerque, and five miles from the University of New Mexico (UNM). The [51 bus line](http://www.cabq.gov/transit-ada/vi080315/wk0051intp04.html) runs on Atrisco, and there's a stop right outside the house.
 
-        There is a driveway with secluded off-street parking.
-
+        There is a driveway off Atrisco with secluded off-street parking.
 
       #images
         - each image in public._data
@@ -60,10 +58,13 @@ html
       h3 Contact the Owner
 
       :markdown
-        Please call, text, or email if you have questions or would like to arrange a viewing.
+        To arrange a viewing, send an email to [zeke@sikelianos.com](mailto:zeke@sikelianos.com).
 
-        - Owner name: Zeke Sikelianos
+        - Owner: Zeke Sikelianos
         - Phone: (505) 842-9088 or (505) 459-2942
         - Email: [zeke@sikelianos.com](mailto:zeke@sikelianos.com)
         - Website: [atriscohouse.org](http://atriscohouse.org)
-        - Map: [1532 Atrisco SW, Albuquerque NM 87105](http://goo.gl/9AtfSu)
+        - Street Address: [1532 Atrisco SW, Albuquerque NM 87105](http://goo.gl/9AtfSu)
+
+      #map
+        <iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/sikelianos.jhnhbhak/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1Ijoic2lrZWxpYW5vcyIsImEiOiJHTjAwOTBFIn0.YSTnY-2sFeLs5Uy4R26IVw'></iframe>

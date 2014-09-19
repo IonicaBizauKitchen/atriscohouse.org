@@ -1,21 +1,22 @@
 text-color = #553a2a
 
-body
+html, body
+  margin 0
+  padding 0
 
+body
   font-family 'Droid Serif', 'Georgia', 'Bitter', 'Kreon', 'Vollkorn', serif
   // background rgba(214, 171, 101, 0.49)
-  background rgba(204, 192, 167, 0.49)
+  background #E8E0D8
   color text-color
-  margin 0
-  padding 20px
   font-size 18px
   font-weight 400
+  position relative
 
 section
   position relative
   margin 0 auto
-  max-width 700px
-
+  max-width 1000px
 
 a
   color #c6430b
@@ -23,40 +24,61 @@ a
   &:hover
     text-decoration underline
 
+#splash
+  display block
+  background black no-repeat center center
+  -webkit-background-size cover
+  -moz-background-size cover
+  -o-background-size cover
+  background-size cover
+  width 100%
+  height 100%
+  margin 0
+  padding 0
+  position relative
+
 hgroup
-  margin 40px 0 40px 0
+  max-width 500px
+  position absolute
+  // background white
+  padding 20px
+  top 50%
+  left 50%
+  transform translate(-50%, -120%)
+  h1,h2,h3
+    color white
+    text-shadow 1px 1px 20px black, 0 0 40px black, 0 0 20px black
+    a
+      color white
+      &:hover
+        text-decoration none
+  h1
+    font-size 72px
+    line-height 1
 
 h1, h2, h3
-  // font-weight normal
-  font-weight 700
+  font-family 'Alegreya SC', serif
+  font-weight 400
   text-align center
-
-h1, h2
   margin 0
   padding 0
 
-h1
-  font-size 42px
-  line-height 1
-
 h2
-  font-size 22px
-  // text-transform uppercase
+  font-size 26px
   line-height 2
-  opacity 0.6
-  font-weight 400
   em
     font-weight 400
-    font-size 18px
+    font-size 22px
+    font-style normal
 
 h3
-  margin 50px 0 10px 0
+  font-size 26px
+  margin 100px 0 10px 0
   padding 0
   // border-bottom 2px solid text-color
   // margin-bottom -20px
 
 h3:before
-	content "boo"
 	display block
 	border-top solid 1px black
 	width 100%
@@ -76,7 +98,6 @@ p, li
   line-height 1.5
 
 img
-  // border 4px solid white
   max-width 100%
   width 100%
   border-radius 4px
@@ -87,3 +108,9 @@ a.img
   display block
   margin 30px 0 50px 0
   text-align center
+
+#map
+  border 8px solid white
+  overflow hidden
+  box-shadow 0px 2px 8px 0px rgba(50, 50, 50, 0.5)
+  margin 60px 0 300px 0
