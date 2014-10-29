@@ -37,6 +37,7 @@ a
   padding 0
   position relative
 
+
 hgroup
   max-width 500px
   position absolute
@@ -126,8 +127,49 @@ table
     padding 8px 0
     line-height 2
     border-bottom 1px solid rgba(text-color, 0.2)
-    font-size text-font-size
-
 
 footer
   margin 20px 0 80px 0
+
+
+@media only screen and (max-width: 767px)
+
+  body
+    font-size 16px
+
+  #splash
+    background none
+    width auto
+    height auto
+    margin 0
+    padding 0
+    position relative
+
+  hgroup
+    max-width 500px
+    position relative
+    top 0
+    left 0
+    transform translate(0, 0)
+    h1,h2,h3
+      // text-shadow none
+      a
+        &:hover
+          text-decoration none
+    h1
+      font-size 36px
+      line-height 1
+      a
+        text-decoration none
+
+  #map
+    display none
+
+  p, h2, h3, li, table
+    padding-left 20px
+    padding-right 20px
+  li
+    padding-left 5px
+  td p
+    padding-left 0
+    padding-right 0
